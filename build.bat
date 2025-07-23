@@ -1,5 +1,5 @@
 @echo off
-echo Building local-copy executable...
+echo Building local-synk executable...
 
 REM Create deploy/windows directory if it doesn't exist
 if not exist "deploy\windows" mkdir "deploy\windows"
@@ -21,11 +21,11 @@ if exist "*.spec" del /q "*.spec" 2>nul
 
 REM Build the executable
 echo Building executable...
-echo old command nicegui-pack --name "local-copy" ..\..\main.py
+echo old command nicegui-pack --name "local-synk" ..\..\main.py
 
 echo.
 echo Building with pyinstaller directly...
-pyinstaller --name "local-copy" --collect-all nicegui --hidden-import "win32api" ..\..\main.py
+pyinstaller --name "local-synk" --collect-all nicegui --hidden-import "win32api" ..\..\main.py
 
 echo Build complete! Check deploy\windows\dist for the executable.
 pause

@@ -2,7 +2,7 @@
 setlocal
 
 :: Set service name
-set SERVICE_NAME=local-copy
+set SERVICE_NAME=local-synk
 
 :: Get current directory
 set CURRENT_DIR=%~dp0
@@ -10,7 +10,7 @@ set CURRENT_DIR=%~dp0
 :: Set paths
 set NSSM_PATH=%CURRENT_DIR%nssm.exe
 
-echo Uninstalling local-copy Windows Service...
+echo Uninstalling local-synk Windows Service...
 echo.
 
 :: Check if NSSM exists

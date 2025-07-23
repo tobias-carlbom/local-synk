@@ -26,11 +26,11 @@ goto check_Permissions
 :startInstallation
   echo Installing service
   :: Set your service name and its description here
-  set SERVICE_NAME=local-copy
+  set SERVICE_NAME=local-synk
   set SERVICE_DESCRIPTION=description
   
   :: replace with the absolute path where node.exe can be found 
-  nssm install %SERVICE_NAME% "%HOME%\local-copy.exe"
+  nssm install %SERVICE_NAME% "%HOME%\local-synk.exe"
   nssm set %SERVICE_NAME% Description "%SERVICE_DESCRIPTION%"
   nssm set %SERVICE_NAME% AppDirectory "%HOME%"
   

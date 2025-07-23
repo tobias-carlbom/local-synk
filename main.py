@@ -420,7 +420,7 @@ signal.signal(signal.SIGTERM, signal_handler)
 signal.signal(signal.SIGINT, signal_handler)
 
 # Initialize task manager on startup
-logging.info("Starting local-copy sync service...")
+logging.info("Starting local-synk sync service...")
 TaskManager()
 
 try:

@@ -1,0 +1,14 @@
+[Unit]
+Description=local-synk
+After=network.target
+
+[Service]
+Type=simple
+User=user
+WorkingDirectory=/home/user
+ExecStart=/home/user/local-synk
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

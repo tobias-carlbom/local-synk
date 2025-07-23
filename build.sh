@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Building local-copy executable..."
+echo "Building local-synk executable..."
 
 # Create deploy/linux directory if it doesn't exist
 mkdir -p deploy/linux
@@ -20,6 +20,6 @@ rm -f *.spec 2>/dev/null
 
 # Build the executable
 echo "Building executable..."
-nicegui-pack --name "local-copy" --onefile ../../main.py
+nicegui-pack --name "local-synk" --onefile ../../main.py
 
 echo "Build complete! Check deploy/linux/dist for the executable."
